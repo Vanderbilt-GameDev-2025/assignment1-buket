@@ -9,18 +9,20 @@ Welcome to Mourinhoball, a 2D platformer where you play as soccer player Youssef
 - Lives System: Start the game with 3 lives. Losing all lives results in "Game Over."
 - Dynamic Hazards: Avoid Mourinho and spikes, as they reduce lives on contact.
 - Extra Feedback:
-- - At 3 goals: "Hat Trick!" message appears, accompanied by applause sound.
-- - At 5 goals: "King Scorer!" message appears, again with applause sound.
+  - At 3 goals: "Hat Trick!" message appears, accompanied by applause sound.
+  - At 5 goals: "King Scorer!" message appears, again with applause sound.
 
 ## Screenshots
 - Main Gameplay View: 
-TODO (Include a screenshot showcasing the game’s main layout and UI components.)
+![Gameplay Screenshot 1](readme_screenshots/start.png)
 
 - Scoring System:
 TODO (Screenshot of a "Hat Trick!" or "King Scorer!" message.)
+![Gameplay Screenshot 2](readme_screenshots/scored_3.png)
 
 - Game Over:
 TODO (Screenshot showing the "Game Over" state.)
+![Gameplay Screenshot 3](readme_screenshots/gameover.png)
 
 ## Compilation Steps
 1. Clone the repository.
@@ -46,4 +48,4 @@ TODO (Screenshot showing the "Game Over" state.)
 - Context-sensitive sound effects (applause when scoring 3 or 5 goals).
 
 ## Video Demo
-A gameplay demo can be found here: TODO
+A gameplay demo can be found here: [video link](https:sdnksjdn)
