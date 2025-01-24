@@ -27,7 +27,7 @@ size = Vector2(120, 720)
 size = Vector2(1421, 120)
 
 [sub_resource type="LabelSettings" id="LabelSettings_72pim"]
-font_size = 100
+font_size = 60
 outline_size = 10
 outline_color = Color(1, 0.270588, 1, 1)
 
@@ -542,6 +542,7 @@ offset_top = 279.0
 offset_right = 959.0
 offset_bottom = 416.0
 label_settings = SubResource("LabelSettings_72pim")
+horizontal_alignment = 1
 uppercase = true
 
 [node name="RestartButton" type="Button" parent="."]
