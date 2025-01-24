@@ -17,11 +17,9 @@ Welcome to Mourinhoball, a 2D platformer where you play as soccer player Youssef
 ![Gameplay Screenshot 1](readme_screenshots/start.png)
 
 - Scoring System:
-TODO (Screenshot of a "Hat Trick!" or "King Scorer!" message.)
 ![Gameplay Screenshot 2](readme_screenshots/scored_3.png)
 
 - Game Over:
-TODO (Screenshot showing the "Game Over" state.)
 ![Gameplay Screenshot 3](readme_screenshots/gameover.png)
 
 ## Compilation Steps
@@ -48,4 +46,4 @@ TODO (Screenshot showing the "Game Over" state.)
 - Context-sensitive sound effects (applause when scoring 3 or 5 goals).
 
 ## Video Demo
-A gameplay demo can be found here: [video link](https:sdnksjdn)
+A gameplay demo can be found here: [video link](https://youtu.be/UYNzNhDd5VQ)

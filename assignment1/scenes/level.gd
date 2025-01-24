@@ -23,12 +23,17 @@ func _ready() -> void:
 
 
 func _on_timeout() -> void:
-	# 2. create an instance
-	var ball = ball_scene.instantiate()
-	# 3. attach the node to the scene tree
-	ball.position = ball_positions[counter]
-	counter += 1
-	$"../Balls".add_child(ball)
+	# Ensure counter doesn't exceed the number of positions
+	if counter < ball_positions.size():
+		# 2. create an instance
+		var ball = ball_scene.instantiate()
+		# 3. attach the node to the scene tree
+		ball.position = ball_positions[counter]
+		counter += 1
+		$"../Balls".add_child(ball)
+	else:
+		# Stop the timer if no more balls need to spawn
+		self.stop()
 
 
 func restart_game() -> void:

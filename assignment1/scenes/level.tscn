@@ -41,7 +41,7 @@ outline_size = 5
 outline_color = Color(1, 0.137255, 1, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_uefvv"]
-font_size = 41
+font_size = 70
 outline_size = 5
 outline_color = Color(1, 0.25098, 1, 1)
 
@@ -572,11 +572,11 @@ label_settings = SubResource("LabelSettings_psnix")
 
 [node name="KingScorerLabel" type="Label" parent="."]
 visible = false
-offset_left = 270.0
-offset_top = 226.0
-offset_right = 980.0
-offset_bottom = 283.0
-text = "King Scorer! Dzeko has a gift for you"
+offset_left = 434.0
+offset_top = 299.0
+offset_right = 836.0
+offset_bottom = 395.0
+text = "King Scorer!"
 label_settings = SubResource("LabelSettings_uefvv")
 
 [node name="AudioManager" type="AudioManager" parent="."]
