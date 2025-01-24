@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2prs1weygqy5"]
+
+[ext_resource type="Script" path="res://scenes/enemy.gd" id="1_ct66o"]
+[ext_resource type="Texture2D" uid="uid://cb3reekbxmemb" path="res://graphics/mourinho.webp" id="1_fu1kr"]
+
+[node name="Enemy" type="Area2D"]
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_ct66o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fu1kr")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(1, -134, 14, -136, 30, -135, 49, -125, 77, -105, 90, -87, 92, -72, 93, -57, 98, -45, 92, -37, 87, -17, 94, -18, 96, -9, 95, 2, 88, 19, 78, 45, 73, 47, 67, 65, 62, 74, 58, 98, 72, 111, 97, 126, 143, 143, -123, 143, -84, 122, -71, 108, -60, 98, -60, 65, -67, 39, -76, 22, -86, -2, -86, -22, -78, -22, -82, -47, -77, -82, -65, -104, -51, -123, -25, -129)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

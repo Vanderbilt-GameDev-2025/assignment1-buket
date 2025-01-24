@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cswg0rgdgoj"]
+
+[ext_resource type="Texture2D" uid="uid://cl6j7cpxph4dv" path="res://graphics/cones.png" id="1_8vg28"]
+[ext_resource type="Script" path="res://scenes/obstacles.gd" id="1_yd51q"]
+
+[node name="Obstacle" type="Area2D"]
+scale = Vector2(0.06, 0.06)
+script = ExtResource("1_yd51q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8vg28")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-13, -368, 39, -368, 125, 159, 191, -119, 252, -121, 268, -45, 310, -255, 372, -257, 456, 188, 505, 230, 499, 246, 330, 248, 337, 267, 381, 326, 367, 335, 212, 338, 127, 333, 77, 320, 75, 259, -65, 255, -48, 266, -44, 320, -57, 333, -125, 340, -352, 343, -354, 331, -302, 253, -497, 248, -493, 232, -439, 193, -358, -262, -290, -261, -244, -14, -215, -130, -152, -129, -107, 102)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

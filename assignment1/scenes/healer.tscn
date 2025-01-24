@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwv1ahovdktb0"]
+
+[ext_resource type="Texture2D" uid="uid://cgy15asnxb7k0" path="res://graphics/dzeko.webp" id="1_ago36"]
+
+[node name="Healer" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ago36")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-16, -118, 10, -119, 36, -110, 54, -96, 65, -77, 72, -59, 74, -30, 70, -1, 79, -4, 84, 4, 84, 18, 79, 40, 70, 53, 60, 58, 60, 72, 53, 85, 52, 113, 59, 124, -71, 125, -65, 115, -63, 76, -67, 55, -77, 51, -89, 22, -91, -1, -87, -7, -77, -3, -77, -39, -72, -61, -61, -91, -38, -110)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

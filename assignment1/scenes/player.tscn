@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfioxtkbwgdie"]
+
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_dmkwy"]
+[ext_resource type="Texture2D" uid="uid://bti2vox4ndt74" path="res://graphics/en-nesyri.webp" id="1_jlwei"]
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_dmkwy")
+
+[node name="PlayerImage" type="Sprite2D" parent="."]
+texture = ExtResource("1_jlwei")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(4, -119, 27, -117, 53, -108, 74, -87, 82, -64, 85, -30, 84, -3, 89, -4, 93, 2, 92, 11, 90, 23, 87, 40, 85, 51, 79, 55, 75, 54, 65, 91, 63, 125, -69, 125, -65, 120, -64, 100, -64, 68, -68, 53, -74, 54, -79, 49, -82, 40, -88, 5, -86, -2, -79, -2, -73, -1, -76, -21, -75, -36, -72, -63, -67, -82, -57, -95, -45, -106, -32, -112, -17, -116)
