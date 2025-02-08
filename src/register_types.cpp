@@ -3,6 +3,7 @@
 #include "keyinput.h"
 #include "modifyspeed.h"
 #include "audiomanager.h"
+#include "enhancedinputhandling.h"
 
 
 #include <gdextension_interface.h>
@@ -19,6 +20,8 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 	GDREGISTER_CLASS(KeyInput);
 	GDREGISTER_CLASS(ModifySpeed);
     GDREGISTER_CLASS(AudioManager);
+	GDREGISTER_CLASS(EnhancedInputHandling);
+	
 }
 
 void uninitialize_example_module(ModuleInitializationLevel p_level) {

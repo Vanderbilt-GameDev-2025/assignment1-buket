@@ -9,9 +9,11 @@ var lives_label: Label
 var scores_label: Label
 var game_over_label: Label
 
+var enhanced_input_handling: EnhancedInputHandling
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	process_mode = Node.PROCESS_MODE_ALWAYS
 	position = Vector2(646, 216)
 	
 	# Get references to the Labels in the scene
@@ -22,8 +24,15 @@ func _ready() -> void:
 	_update_lives_label()
 	_update_scores_label()
 	
+	enhanced_input_handling = EnhancedInputHandling.new()
+	add_child(enhanced_input_handling)
+	enhanced_input_handling.set_newSpeed(1000)
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if get_tree().paused or lives <= 0:  # Prevent movement when the game is paused
+		return
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
 	move_and_slide()
