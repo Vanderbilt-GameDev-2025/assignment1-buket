@@ -65,4 +65,4 @@ When the game is over, the game remains paused and unresumable until manually re
 - The module was integrated into the existing project where movement controls, game over states, and scoring were already implemented. It was verified that the new input logic did not interfere with existing game mechanics, such as the score update or the decrement of lives.
 
 ## Video Demo
-A gameplay demo can be found here: [video link](TODO)
+A gameplay demo video can be found here: [video link](https://www.youtube.com/watch?v=khrzwS_5jmM)
