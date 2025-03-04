@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvgje6mj22lsw"]
+
+[ext_resource type="Texture2D" uid="uid://cl6j7cpxph4dv" path="res://graphics/cones.png" id="2_3uvy6"]
+
+[node name="ConeCollisionHandler" type="ConeCollisionHandler"]
+angular_damp_mode = 1
+angular_damp = 1e+06
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(0.2, 0.2)
+polygon = PackedVector2Array(-116.667, 100, -16.6667, -366.667, 50, -366.667, 116.667, 150, 183.333, -116.667, 250, -116.667, 266.667, -33.3333, 316.667, -250, 383.333, -250, 450, 200, 500, 233.333, 333.333, 250, 383.333, 333.333, 66.6667, 316.667, 83.3333, 266.667, -66.6667, 266.667, -50, 316.667, -350, 333.333, -300, 250, -500, 233.333, -433.333, 200, -350, -266.667, -283.333, -266.667, -250, -16.6667, -216.667, -133.333, -150, -133.333)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_3uvy6")

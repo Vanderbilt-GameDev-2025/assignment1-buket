@@ -11,10 +11,17 @@ var game_over_label: Label
 
 var enhanced_input_handling: EnhancedInputHandling
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+
+	for node in get_tree().get_nodes_in_group("RigidBody2D"):
+		print("RigidBody in Scene: ", node.name)
+
+
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	position = Vector2(646, 216)
+	
 	
 	# Get references to the Labels in the scene
 	lives_label = get_parent().get_node("LivesLabel")
@@ -30,7 +37,11 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
+	
+	# print("Player processing...")
+	# print("Physics running. Paused?", get_tree().paused)
+	# print("Total RigidBodies: ", get_tree().get_nodes_in_group("RigidBody2D").size())
 	if get_tree().paused or lives <= 0:  # Prevent movement when the game is paused
 		return
 	var direction = Input.get_vector("left", "right", "up", "down")

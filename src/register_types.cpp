@@ -4,6 +4,7 @@
 #include "modifyspeed.h"
 #include "audiomanager.h"
 #include "enhancedinputhandling.h"
+#include "cone_collisionhandler.h"
 
 
 #include <gdextension_interface.h>
@@ -21,6 +22,7 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 	GDREGISTER_CLASS(ModifySpeed);
     GDREGISTER_CLASS(AudioManager);
 	GDREGISTER_CLASS(EnhancedInputHandling);
+	GDREGISTER_CLASS(ConeCollisionHandler);
 	
 }
 
